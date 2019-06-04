@@ -85,10 +85,10 @@ public class Panneau extends JPanel {
 				}
 			}
 		}
-		int x=0;
 		if(this.images.get(0).get(0) == null || this.images.get(0).get(0).getWidth() != tailleCoteCase) {
+			int x=0, y;
 			for(ArrayList<BufferedImage> imagesAux : this.defaultImages) {
-				int y=0;
+				y=0;
 				for(BufferedImage imageIn : imagesAux) {
 					Image toolkitImage = imageIn.getScaledInstance(tailleCoteCase, tailleCoteCase, Image.SCALE_DEFAULT);
 					BufferedImage imageOut = new BufferedImage(toolkitImage.getWidth(null), toolkitImage.getHeight(null), BufferedImage.TYPE_INT_ARGB);
